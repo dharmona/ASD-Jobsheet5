@@ -44,6 +44,10 @@ public class MahasiswaMain18 {
         mhs.selectionsort();
         mhs.tampil();
 
+        System.out.println("\nData setelah diurutkan (Insertion Sort DESC)");
+        mhs.insertionsort();
+        mhs.tampil();
+
         sc.close();
     }
 }

@@ -4,6 +4,7 @@
     c.	Jika banyak data di dalam listMhs adalah 50, maka berapakali perulangan i  akan berlangsung? Dan ada berapa Tahap bubble sort yang ditempuh?
 2.	Modifikasi program diatas dimana data mahasiswa bersifat dinamis (input dari keyborad) yang terdiri dari nim, nama, kelas, dan ipk!
 3. Untuk apa code ini?
+4. Rubahlah menjadi desc?
 
 Jawaban:
 1. 
@@ -39,3 +40,4 @@ Jadi: 50 - 1 = 49 tahap
 
 2. DONE
 3. Menukar posisi data agar elemen dengan nilai tertentu (min/max) berpindah ke posisi yang seharusnya dalam proses pengurutan (sorting).
+4. DONE

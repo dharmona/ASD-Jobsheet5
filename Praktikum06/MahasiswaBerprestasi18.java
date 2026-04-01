@@ -7,7 +7,7 @@ public class MahasiswaBerprestasi18 {
     MahasiswaBerprestasi18(int jumlah) {
         listMhs = new Mahasiswa18[jumlah];
     }
-    
+
     void tambah(Mahasiswa18 m) {
         if (idx < listMhs.length) {
             listMhs[idx] = m;
@@ -49,6 +49,18 @@ public class MahasiswaBerprestasi18 {
             Mahasiswa18 temp = listMhs[idxMin];
             listMhs[idxMin] = listMhs[i];
             listMhs[i] = temp;
+        }
+    }
+
+    void insertionsort() {
+        for (int i = 1; i < listMhs.length; i++) {
+            Mahasiswa18 temp = listMhs[i];
+            int j = i;
+            while (j>0 && listMhs[j-1].ipk > temp.ipk ) {
+                listMhs[j] = listMhs[j-1];
+                j--;
+            }
+            listMhs[j] = temp;
         }
     }
 }
