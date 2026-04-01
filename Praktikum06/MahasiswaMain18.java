@@ -6,11 +6,12 @@ public class MahasiswaMain18 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        MahasiswaBerprestasi18 mhs = new MahasiswaBerprestasi18();
-
+        
         System.out.print("Masukkan jumlah mahasiswa: ");
         int jumlah = sc.nextInt();
         sc.nextLine(); // buang newline
+
+        MahasiswaBerprestasi18 mhs = new MahasiswaBerprestasi18(jumlah);
 
         for (int i = 0; i < jumlah; i++) {
             System.out.println("\nData Mahasiswa ke-" + (i + 1));
@@ -37,6 +38,10 @@ public class MahasiswaMain18 {
 
         System.out.println("\nData setelah diurutkan (Bubble Sort DESC)");
         mhs.bubblesort();
+        mhs.tampil();
+
+        System.out.println("\nData setelah diurutkan (Selection Sort DESC)");
+        mhs.selectionsort();
         mhs.tampil();
 
         sc.close();
